@@ -5,7 +5,7 @@ let messagesContainer = document.querySelector("#messages-inner");
 let copyLinkBtn = document.querySelector('#copy-link');
 let userLink = '';
 
-let frontendUrl = 'https://anonymousme.netlify.app/'
+let frontendUrl = 'https://anonymousme.netlify.app'
 
 window.onload = validateToken()
 
