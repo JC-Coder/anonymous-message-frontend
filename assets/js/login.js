@@ -17,8 +17,8 @@ submit.addEventListener("click", login);
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
     var urlencoded = new URLSearchParams();
-    urlencoded.append("username", username.value);
-    urlencoded.append("password", password.value);
+    urlencoded.append("username", username.value.trim());
+    urlencoded.append("password", password.value.trim());
 
     var requestOptions = {
         method: 'POST',
