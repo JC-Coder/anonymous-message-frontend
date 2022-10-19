@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AnonymousMe - Profile </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- font awesome   -->
+  <script src="https://kit.fontawesome.com/3efb728339.js" crossorigin="anonymous"></script>
+  <!-- offline fontawesome -->
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!--  page css file -->
+  <link href="assets/css/profile.css" rel="stylesheet">
+  <link href="assets/css/alerts.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="alert"></div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><span>AnonymousMe</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="logout.html">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+      <div class="card p-4">
+        <div class=" image d-flex flex-column justify-content-center align-items-center"> <button
+            class="btn btn-secondary"> <img src="./assets/img/palm-recognition.png" height="100" width="100" /></button>
+          <span class="name mt-3">Welcome</span> <span class="idd" id="username">@eleanorpena</span>
+          <div class="d-flex flex-row justify-content-center align-items-center mt-3"> <span class="number"
+              id="messageCount">1069 <span class="follow">Messages</span></span> </div>
+          <div class=" d-flex mt-2"> <button class="btn1 btn-dark" ><a href="#heading" class="text-white">See Messages</a></button> </div>
+          <div class="text mt-3 text-center"> <span>Copy your link below and share with friends to get annonymous feedback and messages.</span> </div>
+          <div class="mt-3 text-center">
+            <input type="text" id="unique-link" class="form-input" value="https://localhost.com" readonly="true">
+            <button class="copy-link" id="copy-link"><i class="fa fa-copy me-2"></i>Click to copy</button>
+          </div>
+          <div class=" px-2 rounded mt-4 date "> <span class="join" id="joinedDate">Joined May,2021</span> </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- messages  -->
+    <div class="messages text-center" id="messages">
+      <h1 class="heading text-center" id="heading">MESSAGES</h1>
+
+
+      <div class="message-items">
+        <div class="container">
+          <div class="row justify-content-center" id="messages-inner">
+              <!-- from js file   -->
+             
+             
+          </div>
+          </div>
+      </div>
+    </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>AnonymousMe</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Designed by <a href="https://jc-coder.vercel.app/">Jc coder</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/profile.js"></script>
+
+</body>
+
+</html>

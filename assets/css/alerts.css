@@ -1,0 +1,29 @@
+
+/* alerts css  */
+
+.success-alert{
+    position: fixed;
+    top: 20%;
+    left: 10px;
+    background-color: green;
+    color: white;
+    z-index: 20;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 3px solid grey ;
+    max-width: 60%;
+}
+
+
+.danger-alert{
+    position: fixed;
+    top: 20%;
+    left: 10px;
+    background-color: rgb(97, 4, 4);
+    color: white;
+    z-index: 20;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 3px solid grey ;
+    max-width: 60%;
+}
