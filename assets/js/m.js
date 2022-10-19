@@ -66,7 +66,7 @@ function alertDanger(message) {
     setTimeout(() => {
         document.querySelector('.danger-alert').remove();
     }, 2500);
-}
+} 
 
 
 
