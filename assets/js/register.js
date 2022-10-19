@@ -24,7 +24,7 @@ registerBtn.addEventListener('click', () => {
             redirect: 'follow'
         };
 
-        fetch("http://localhost:3000/user/register", requestOptions)
+        fetch("https://anonymous-message.adaptable.app/user/register", requestOptions)
             .then(response => response.json())
             .then(result => {
 

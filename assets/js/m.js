@@ -38,7 +38,7 @@ function send() {
             redirect: 'follow'
         };
 
-        fetch("http://localhost:3000/message/create/"+username, requestOptions)
+        fetch("https://anonymous-message.adaptable.app/message/create/"+username, requestOptions)
             .then(response => response.json())
             .then(result => {
                 if(result.createdAt){

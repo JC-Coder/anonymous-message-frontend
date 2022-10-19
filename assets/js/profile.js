@@ -25,7 +25,7 @@ async function validateToken() {
             redirect: 'follow'
         };
 
-        await fetch("http://localhost:3000/user/profile", requestOptions)
+        await fetch("https://anonymous-message.adaptable.app/user/profile", requestOptions)
             .then(response => response.json())
             .then(result => {
 
@@ -65,7 +65,7 @@ function getMessages(token, username) {
         redirect: 'follow'
     };
 
-    fetch("http://localhost:3000/message/all/" + username, requestOptions)
+    fetch("https://anonymous-message.adaptable.app/message/all/" + username, requestOptions)
         .then(response => response.json())
         .then(result => {
             updateMessageCount(result);
@@ -150,7 +150,7 @@ function deleteMessage(id) {
         redirect: 'follow'
     };
 
-    fetch("http://localhost:3000/message/" +id, requestOptions)
+    fetch("https://anonymous-message.adaptable.app/message/" +id, requestOptions)
         .then(response => response.text())
         .then(result => {
             getMessages(token, currentUserUsername);

@@ -27,7 +27,7 @@ submit.addEventListener("click", login);
         redirect: 'follow'
     };
 
-     fetch("http://localhost:3000/user/login", requestOptions)
+     fetch("https://anonymous-message.adaptable.app/user/login", requestOptions)
         .then(response => response.json())
         .then(result => {
 
@@ -64,7 +64,7 @@ submit.addEventListener("click", login);
             redirect: 'follow'
         };
 
-         fetch("http://localhost:3000/user/profile", requestOptions)
+         fetch("https://anonymous-message.adaptable.app/user/profile", requestOptions)
             .then(response => response.json())
             .then(result => {
 
