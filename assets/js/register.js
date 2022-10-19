@@ -3,8 +3,8 @@ let registerBtn = document.querySelector('#register');
 
 
 registerBtn.addEventListener('click', () => {
-    let username = document.querySelector('#Username').value.trim();
-    let password = document.querySelector('#password').value.trim();
+    let username = document.querySelector('#Username').value.replace(/\s+/g, ' ').trim();
+    let password = document.querySelector('#password').value.replace(/\s+/g, ' ').trim();
 
 
     if (!username || !password) {
