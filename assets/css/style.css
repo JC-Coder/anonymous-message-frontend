@@ -44,6 +44,7 @@ h6 {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
+  visibility: visible;
 }
 
 #preloader:before {

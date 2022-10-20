@@ -33,6 +33,15 @@ async function validateToken() {
                     currentUserUsername = result.username;
                     updatePage(result);
 
+
+                    // remove preloader
+                    let preloader = document.querySelector('.profile-preloader');
+                    if (preloader) {
+                       setTimeout(() => {
+                        preloader.remove();
+                       }, 2000);
+                    }
+
                     // set userLink
                     userLink = `${frontendUrl}/m.html?u=${result.username}`;
                     document.querySelector('#unique-link').value = userLink;
@@ -83,11 +92,12 @@ function updateMessageCount(payload) {
 }
 
 
+
 // update messages 
 function updateMessages(items) {
     let html = '';
 
-    if(items.length == 0){
+    if (items.length == 0) {
         html += ` <div class="col-lg-4">
         <div class="card card-margin">
             <div class="card-header no-border">
@@ -103,10 +113,10 @@ function updateMessages(items) {
             </div>
         </div>
     </div> `
-    }else {
+    } else {
 
-    items.forEach(item => {
-        html += ` <div class="col-lg-4">
+        items.forEach(item => {
+            html += ` <div class="col-lg-4">
     <div class="card card-margin">
         <div class="card-header no-border">
             <h5 class="card-title fw-bold">Annonymous</h5>
@@ -122,9 +132,9 @@ function updateMessages(items) {
         </div>
     </div>
 </div> `
-    });
+        });
 
-}
+    }
 
     messagesContainer.innerHTML = html;
 }
@@ -150,7 +160,7 @@ function deleteMessage(id) {
         redirect: 'follow'
     };
 
-    fetch("https://anonymous-message.adaptable.app/message/" +id, requestOptions)
+    fetch("https://anonymous-message.adaptable.app/message/" + id, requestOptions)
         .then(response => response.text())
         .then(result => {
             getMessages(token, currentUserUsername);
@@ -163,27 +173,27 @@ function deleteMessage(id) {
 
 // alerts 
 
-function alertSuccess(message){
+function alertSuccess(message) {
     let template = `<div class="success-alert">
     ${message}
   </div>`;
 
-  document.querySelector('#alert').innerHTML = template;
+    document.querySelector('#alert').innerHTML = template;
 
-  setTimeout(() => {
-    document.querySelector('.success-alert').remove();
-  }, 1500);
+    setTimeout(() => {
+        document.querySelector('.success-alert').remove();
+    }, 1500);
 }
 
 
-function alertDanger(message){
+function alertDanger(message) {
     let template = `<div class="danger-alert">
     ${message}
   </div>`
 
-  document.querySelector('#alert').innerHTML = template;
+    document.querySelector('#alert').innerHTML = template;
 
-  setTimeout(() => {
-    document.querySelector('.danger-alert').remove();
-  }, 1500);
+    setTimeout(() => {
+        document.querySelector('.danger-alert').remove();
+    }, 1500);
 }
